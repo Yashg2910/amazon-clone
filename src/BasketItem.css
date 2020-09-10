@@ -15,8 +15,12 @@
 }
 
 .basketitem__info > button {
-    background: #f0c14b;
-    border: 1px solid;
+    background: #cd9042;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
 }
 .basketitem__title {
     font-size: 17px;

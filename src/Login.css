@@ -7,7 +7,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     object-fit: contain;
-    width: 100px;
+    height: 80px;
     margin-right: auto;
     margin-left: auto;
 
@@ -15,11 +15,20 @@
 
 .login__button {
     width: 100%;
-    background-color: orange;
+    background-color: #cd9042;
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 20px;
 }
 
 .login__register {
     width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: gray;
 }
 
 .login__container {
@@ -27,11 +36,15 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid lightgray;
-    padding: 20px;
+    padding: 20px !important;
     background-color: white;
     margin-bottom: 10px;
+}
+.login__container > h1 {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .login__container > form > input {
@@ -39,4 +52,11 @@
     margin-bottom: 10px;
     font-size: 12px;
     width: 100%;
+    border-radius: 20px;
+}
+.login__container > form > input:focus {}
+
+.login__container > form > p {
+    font-size: 12px;
+    margin: 5px;
 }

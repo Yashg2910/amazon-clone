@@ -4,7 +4,7 @@ import { useStateValue } from "./StateProvider";
 
 function Product({id, title, image, price, rating}) {
 
-    const [basket, dispatch] = useStateValue();
+    const [ {basket}, dispatch] = useStateValue();
 
     // console.log("BASKET in product>>>>", basket);
 
@@ -26,10 +26,9 @@ function Product({id, title, image, price, rating}) {
         <div className="product">
             {/* Info */}
             <div className="product__info">
-                <p>{title}</p>
+                <p className="product__title">{title}</p>
                 <p className="product__price">
-                    <p>₹</p>
-                    <strong>{price}</strong>
+                    <strong>₹{price}</strong>
                 </p>
                 <div className="product__rating">
                     {Array(rating).fill().map((_, i) => (

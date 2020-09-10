@@ -7,7 +7,9 @@
     background-color: #f3f3f3; 
     padding: 20px;
     border: 1px solid #dddddd;
-    border-radius: 3px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(28, 55, 70);
 }
 .subtotal > button {
     background-color: #cd9042;
@@ -15,7 +17,8 @@
     padding: 3px;
     border: 1px solid #111;
     font-size: 12px;
-    border-radius: 3px;
+    border-radius: 10px;
+    color: white;
 }
 
 .subtotal__gift {

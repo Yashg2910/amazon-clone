@@ -4,7 +4,7 @@ import { useStateValue } from "./StateProvider";
 
 function BasketItem({id, image, title, price, rating}) {
     
-    const [{basket}, dispatch] = useStateValue();
+    const [{}, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
         // remove
@@ -15,7 +15,7 @@ function BasketItem({id, image, title, price, rating}) {
     }
     return (
         <div className="basketitem">
-            <img className="basketitem__image" src={image} alt="image" />
+            <img className="basketitem__image" src={image} alt="basket item" />
             <div className="basketitem__info">
                 <p className="basketitem__title">{title}</p>
                 <p className="basketitem__price">

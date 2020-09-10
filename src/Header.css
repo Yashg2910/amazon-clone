@@ -24,6 +24,10 @@
 
 .header__searchInput {
     width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px ;
 }
 
 .header__searchInput:focus {
@@ -32,8 +36,9 @@
 
 .header__searchIcon {
     padding: 5px;
-    height: 12px !important;
+    height: 20px !important;
     background-color: #cd9042;
+    border-radius: 20px;
 }
 
 .header__nav {
@@ -56,7 +61,7 @@
 .header__option {
     display: flex;
     flex-direction: column;
-    margin-right: 5px;
+    margin-right: 20px;
     align-items: center;
 }
 
@@ -67,4 +72,9 @@
 .header__optionLineTwo {
     font-size: 14px;
     font-weight: 800;
+}
+
+a{
+    color: white !important;
+    text-decoration: none;
 }

@@ -3,7 +3,6 @@ import "./Checkout.css";
 import Subtotal from "./Subtotal.js"
 import { useStateValue } from "./StateProvider";
 import BasketItem from "./BasketItem";
-import {auth} from "./firebase";
 
 function Checkout() {
     const [{basket, user}, dispatch] = useStateValue();

@@ -10,6 +10,13 @@
     max-height: 400px;
     background-color: white;
     z-index: 1;
+    border-radius: 20px;
+}
+
+.product:hover{
+    transition: 200ms transform ease-in;
+    transform: scale(1.08);
+    transition-delay: 300ms;
 }
 
 .product > img {
@@ -27,8 +34,22 @@
 
 .product__add {
     background-color: #cd9042;
-    border: 1px solid black;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
 }
 .product__price {
     display: flex;
 }
+@media only screen and (max-width: 1000px) {
+    .product:hover{
+        transition: none;
+        transform: none;
+        transition-delay: none;
+    }
+    .product {
+        max-width: 600px;
+        width: 80%;
+    }
+  }
