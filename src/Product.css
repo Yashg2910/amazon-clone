@@ -8,15 +8,17 @@
     width: 100%;
     min-width: 100px;
     max-height: 400px;
-    background-color: white;
     z-index: 1;
     border-radius: 20px;
+    background-color: rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
 }
 
 .product:hover{
     transition: 200ms transform ease-in;
     transform: scale(1.08);
     transition-delay: 300ms;
+    box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
 }
 
 .product > img {
@@ -47,6 +49,7 @@
         transition: none;
         transform: none;
         transition-delay: none;
+        box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
     }
     .product {
         max-width: 600px;
